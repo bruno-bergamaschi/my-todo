@@ -1,3 +1,6 @@
+import * as S from "./styles";
+
+import { Animation } from "../../components/Animation";
 import { Button } from "../../components/Button";
 import { BoxButton, Container, FlexRow, ItemCard, Title } from "./styles";
 import { useListTodos } from "./useListTodos";
@@ -7,7 +10,19 @@ interface ListTodosProps {
 }
 
 export function ListTodos({ state }: ListTodosProps) {
-  const { listTodos, changeChecketItem, changeDeleteItem } = useListTodos();
+  const { checkExistItem, listTodos, changeChecketItem, changeDeleteItem } =
+    useListTodos(state);
+
+  if (!checkExistItem.length) {
+    return (
+      <>
+        <S.BoxAnimation>
+          <Animation />
+          <p>Não há item na lista selecionada!</p>
+        </S.BoxAnimation>
+      </>
+    );
+  }
 
   return (
     <Container>

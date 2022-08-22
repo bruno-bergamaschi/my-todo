@@ -2,7 +2,7 @@ import { useCallback, useEffect } from "react";
 import { ITodoItem } from "../../context/hooks/useListTodos";
 import { useContextProvider } from "../../context/useContext";
 
-export const useListTodos = () => {
+export const useListTodos = (state: boolean) => {
   const {
     listTodos,
     checkedItem,
@@ -27,7 +27,9 @@ export const useListTodos = () => {
     [deleteItem, listenChanges, setListenChanges]
   );
 
+  const checkExistItem = listTodos.filter((item) => item.isCompleted === state);
+
   useEffect(() => {}, [changeChecketItem, listTodos]);
 
-  return { listTodos, changeChecketItem, changeDeleteItem };
+  return { checkExistItem, listTodos, changeChecketItem, changeDeleteItem };
 };

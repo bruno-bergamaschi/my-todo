@@ -36,3 +36,16 @@ export const Title = styled.p<ITitleProps>`
   text-decoration: ${({ isCompleted }) =>
     isCompleted ? "line-through" : "none"};
 `;
+
+export const BoxAnimation = styled.div`
+  ${({ theme }) => css`
+    padding: 3rem;
+
+    p {
+      text-align: center;
+      padding-top: 2rem;
+      font-size: 1.3rem;
+      color: ${theme.secondary_text};
+    }
+  `}
+`;
