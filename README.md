@@ -22,7 +22,7 @@ Tecnologias utilizadas:
 ![image](https://user-images.githubusercontent.com/52868587/192376941-ffb805aa-58c9-44c1-bbc5-71cbe866e1ec.png)
 ![image](https://user-images.githubusercontent.com/52868587/192376861-9ed33524-c056-4d1d-8b90-9b3767d161c0.png)
 ![image](https://user-images.githubusercontent.com/52868587/192377201-dde07903-b9be-419b-a86d-bd304b5c55f6.png)
-![image](https://user-images.githubusercontent.com/52868587/192377055-3883264b-a4ee-44a8-9e3c-6b966fd600f9.png)
+![image](https://user-images.githubusercontent.com/52868587/192377458-ae3e5a5d-15fa-4c45-a9b2-6e939653f77a.png)
 
 
 ## Link
